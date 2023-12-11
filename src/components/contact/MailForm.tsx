@@ -1,0 +1,41 @@
+import { Button, Card, Label, TextInput } from 'flowbite-react';
+import { HiMail } from 'react-icons/hi';
+import ModalPolicy from '../ModalPolicy';
+import env from '../../env';
+
+
+export default function MailForm({className} : {className?: string}) {
+
+
+  return (
+    
+    
+     <Card className={"max-w-md m-auto my-10 min-w-full relative " + className}>
+          <span className="material-icons absolute rotate-[15deg] right-14 top-12 scale-[4] text-zinc-500">mail</span>
+
+      <h2 className='font-extrabold text-3xl'>
+      Email
+      </h2>
+         <form className='w-full py-10'> 
+        <div className="mt-2 mb-1 block">
+          <Label htmlFor="message" value="Sua Mensagem:"  
+         />
+        </div>
+        <TextInput id="message" type="text" sizing="lg" required icon={HiMail}   helperText={
+          <>
+            Não armazenaremos seu e-mail, em acordo com as 
+           <ModalPolicy>
+            Políticas de privacidade
+           </ModalPolicy>
+            .
+          </>
+        }/>
+        <Button href={`mailto:${env.companyMail}`} className='mt-10 bg-yellow-900 hover:bg-yellow-600 transition'>
+          Enviar
+        </Button>
+    </form>
+    </Card>
+     
+
+  )
+}

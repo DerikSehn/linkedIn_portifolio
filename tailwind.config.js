@@ -12,6 +12,11 @@ export default  {
         secondary: '#3182CE', // Defina a cor secundária da sua empresa
       },
     },
+     button: {
+      base: 'px-4 py-2 font-semibold rounded-md focus:outline-none transition duration-300 ease-in-out',
+      primary: 'bg-primary text-white hover:bg-secondary',
+      secondary: 'bg-secondary text-white hover:bg-primary',
+    },
   },
   variants: {
     extend: {},

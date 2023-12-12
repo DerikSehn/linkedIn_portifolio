@@ -10,8 +10,8 @@ import Drawer from './utils/Drawer';
 const Header: React.FC = () => {
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-transparent bg-zinc-50">
-      <div className="container mx-auto flex max-w-[1128px] items-center px-6 h-[53px] font-thin">
+    <header className="fixed top-0 w-full z-50 bg-transparent bg-zinc-50 border">
+      <div className="container mx-auto flex max-w-[1128px] items-center px-3 h-[53px] font-thin">
           <img src={logo} className='text-3xl text-slate-300 hover:text-slate-200 transition-colors'/>
           <div className='lg:visible invisible lg:w-64 w-0'>
             <SearchInput />

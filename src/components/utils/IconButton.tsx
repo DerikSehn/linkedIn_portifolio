@@ -5,7 +5,7 @@ export default function IconButton({ label, labelClassName = '', className = '',
         <span className={'block button  group-hover:text-slate-900 border-none p-0 material-icons backdrop-filter scale-110 bg-transparent text-slate-600 ' + className}>
             {children}    
           </span>
-          <small className={'block text-slate-600 w-0 invisible md:w-full md:visible font-normal text-center group-hover:text-slate-900 ' + labelClassName } >
+          <small className={'block text-slate-600 text-xs w-0 invisible md:w-full md:visible font-normal text-center group-hover:text-slate-900 ' + labelClassName } >
             {label}
           </small>  
   </a>

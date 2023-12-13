@@ -7,7 +7,7 @@ const PostData = ({src, description } : {src?: string, description?: string}) =>
       <img
         src={src} // Substitua pela URL real da imagem do post
         alt="Post"
-        className="w-full h-48 object-cover rounded"
+        className="w-full object-contain rounded"
       />
     </div>
   );

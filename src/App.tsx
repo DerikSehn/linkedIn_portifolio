@@ -2,8 +2,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Timeline from './components/timeline/Timeline';
-import Footer from './components/Footer';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 /* import ServicesSection from './components/ServicesSection';

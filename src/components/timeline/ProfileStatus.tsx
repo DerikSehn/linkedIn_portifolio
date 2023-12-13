@@ -1,3 +1,5 @@
+import React from 'react'
+
 import capaImg from '../../assets/landing_page/capa.jpeg'
 import profileAvatar from '../../assets/landing_page/profile_avatar.jpeg'
 

@@ -1,9 +1,10 @@
 
 export default  {
     links: {
-        instagram: 'https://www.instagram.com/danibosingeventos/',
+        instagram: 'https://www.instagram.com/d.sehn/',
         whatsapp: 'https://w.app/njDaOZ',
     },
-    companyMail: 'danibosing@gmail.com'
+    companyMail: 'derikbosing@gmail.com',
+
 
 }

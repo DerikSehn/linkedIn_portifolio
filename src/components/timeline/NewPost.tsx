@@ -1,3 +1,4 @@
+import React from 'react'
 import profileAvatar from '../../assets/landing_page/profile_avatar.jpeg'
 
 export default function NewPost() {

@@ -9,8 +9,8 @@ export default function ProfileStatus() {
         className='absolute w-20 border-2 border-slate-100 top-4 -translate-x-1/2 left-1/2 rounded-full' />
         <section className='py-5 pt-1'>
 
-        <span className="block font-extrabold text-lg text-center cursor-pointer hover:text-gray-900" >Derik B. Sehn</span>
-        <span className="block text-sm font-light text-center">Desenvolvedor React | Typescript</span>
+        <span className="block font-extrabold text-md text-center cursor-pointer text-gray-900 hover:text-gray-700" >Derik B. Sehn</span>
+        <span className="block text-xs font-normal text-zinc-700 text-center">Desenvolvedor React | Typescript</span>
        </section>
         <section className='py-4 border-y-2'>
 

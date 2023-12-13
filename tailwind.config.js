@@ -1,10 +1,10 @@
-export default  {
+export default {
   content: [
     "./index.html",
-     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-   darkMode: "class",
+  darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,7 @@ export default  {
         secondary: '#3182CE', // Defina a cor secundária da sua empresa
       },
     },
-     button: {
+    button: {
       base: 'px-4 py-2 font-semibold rounded-md focus:outline-none transition duration-300 ease-in-out',
       primary: 'bg-primary text-white hover:bg-secondary',
       secondary: 'bg-secondary text-white hover:bg-primary',
@@ -20,12 +20,12 @@ export default  {
   },
   variants: {
     extend: {},
-  }, 
-   plugins: [
-     // eslint-disable-next-line no-undef
-     require('tailwindcss-animated'),
-     // eslint-disable-next-line no-undef
-     require('flowbite/plugin')
-    ]
+  },
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('tailwindcss-animated'),
+    // eslint-disable-next-line no-undef
+    require('flowbite/plugin')
+  ]
 }
 

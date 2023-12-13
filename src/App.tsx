@@ -2,6 +2,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Timeline from './components/timeline/Timeline';
+import Footer from './components/Footer';
+
+
 
 /* import ServicesSection from './components/ServicesSection';
 import Header from './components/Header';
@@ -14,10 +17,10 @@ import AboutUs from './components/AboutUs'; */
 
 const LandingPage: React.FC = () => {
 
+ 
   return (<>
         <Header/>
         <Timeline/>
-      
   </>
   );
 };

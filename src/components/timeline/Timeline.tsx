@@ -1,7 +1,7 @@
 import ProfileStatus from './ProfileStatus'
 import DiscoverMore from './DiscoverMore'
 import NewPost from './NewPost'
-import Feed from './Feed'
+import Feed from './feed/Feed'
 import News from './News'
 import Sponsor from './Sponsor'
 
@@ -16,7 +16,7 @@ export default function Timeline() {
         </div>
         <div className='lg:col-span-5 md:col-span-8 col-span-12'>
             <NewPost/>
-            <div className='my-5 scale-[.98] h-[.1px] bg-slate-400 w-full'/>
+            <div className='my-3 scale-[.98] h-[.1px] bg-slate-400 w-full'/>
             <Feed />
         </div>
         <div className='md:col-span-4 col-span-12'>

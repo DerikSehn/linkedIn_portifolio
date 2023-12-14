@@ -12,6 +12,36 @@ import unimedImg from '../../../assets/landing_page/unimedImg.jpg'
 import afuImg from '../../../assets/landing_page/afuImg.png'
 
 const posts = [
+  {
+    header: {
+      avatar: patrocinadora,
+      userName: 'Ellen Cassol',
+      subtitle: 'parabenizou isso',
+    },
+    owner: {
+      avatar: patrocinadora,
+      name: 'Ellen Cassol',
+      subtitle: 'Analista de suporte técnico',
+      time: 'agora mesmo',
+    },
+    data: {
+      description: (
+        <>
+          Recomendo Dérik B. Sehn como relevante para a posição de
+          desenvolvedor full-stack. Ele trabalhou em um projeto de
+          desenvolvimento web para a Unimed Vale do Caí, onde desenvolveu
+          componentes React e colaborou em uma API REST Java. Ele também
+          trabalhou como estagiário em uma empresa de design gráfico, onde
+          adquiriu experiência em Photoshop e CorelDRAW.
+        </>
+      ),
+      src: dealImg,
+    },
+    likes: {
+      likesCount: 42,
+    },
+    actions: {},
+  },
     {
     header: {
       avatar: profileImg,
@@ -114,36 +144,7 @@ const posts = [
     },
     actions: {},
   },
-  {
-    header: {
-      avatar: patrocinadora,
-      userName: 'Ellen Cassol',
-      subtitle: 'parabenizou isso',
-    },
-    owner: {
-      avatar: patrocinadora,
-      name: 'Ellen Cassol',
-      subtitle: 'Analista de suporte técnico',
-      time: 'agora mesmo',
-    },
-    data: {
-      description: (
-        <>
-          Recomendo Dérik B. Sehn como relevante para a posição de
-          desenvolvedor full-stack. Ele trabalhou em um projeto de
-          desenvolvimento web para a Unimed Vale do Caí, onde desenvolveu
-          componentes React e colaborou em uma API REST Java. Ele também
-          trabalhou como estagiário em uma empresa de design gráfico, onde
-          adquiriu experiência em Photoshop e CorelDRAW.
-        </>
-      ),
-      src: dealImg,
-    },
-    likes: {
-      likesCount: 42,
-    },
-    actions: {},
-  },
+  
   
  
   

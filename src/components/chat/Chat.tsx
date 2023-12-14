@@ -13,7 +13,6 @@ export default function Chat() {
     }
 
     const messages = {
-       
         1: {
             lastMessage: {
                description: 'Hi'
@@ -41,7 +40,7 @@ export default function Chat() {
 
   return (
     <main className="fixed bottom-0 w-full">
-        <section className='rounded-t-xl shadow-md border absolute right-2 w-[calc(200px+8vw)] bottom-0   bg-zinc-50 '>
+        <section className='rounded-t-xls shadow-md border absolute right-2 w-[calc(200px+8vw)] bottom-0   bg-zinc-50 '>
           <CloseButton className='absolute right-0 top-1 scale-75'/>
            <span className='absolute right-8 top-[10px]  material-icons text-zinc-500'>
            more_horiz

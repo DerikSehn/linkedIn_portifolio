@@ -1,7 +1,7 @@
 import ProfileStatus from './ProfileStatus'
 import DiscoverMore from './DiscoverMore'
 import NewPost from './NewPost'
-import Feed from './feed/Post'
+import Feed from './feed/Feed'
 import News from './News'
 import Sponsor from './Sponsor'
 

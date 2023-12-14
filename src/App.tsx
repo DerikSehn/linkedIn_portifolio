@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Timeline from './components/timeline/Timeline';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Chat from './components/chat/Chat';
 // ..
 AOS.init();
 
@@ -23,6 +24,7 @@ const LandingPage: React.FC = () => {
   return (<>
         <Header/>
         <Timeline/>
+        <Chat />
   </>
   );
 };

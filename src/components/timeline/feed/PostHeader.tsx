@@ -1,7 +1,8 @@
 import React from 'react'
 import CloseButton from '../../CloseButton'
+import { ChildrenProp } from './Post'
 
-export default function PostHeader({children}) {
+export default function PostHeader({children} : ChildrenProp) {
   return (
     
     <section className='relative h-10 mx-4 p-2 pl-0 pr-10 border-b-2 flex gap-1 items-center'>

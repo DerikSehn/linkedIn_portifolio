@@ -1,4 +1,4 @@
-const PostData = ({src, description } : {src?: string, description?: string}) => {
+const PostData = ({src, description } : {src?: string, description?: string | JSX.Element}) => {
   return (
     <div className="border-t">
       <p className="text-gray-700 mb-4 p-4 ">

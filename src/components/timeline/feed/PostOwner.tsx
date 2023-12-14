@@ -9,7 +9,7 @@ export default function PostOwner({src, name, subtitle, time}: {src?: string, na
                 <span className="block text-zinc-600 text-sm font-normal">{subtitle}</span>
                 <span className="flex items-center text-zinc-600 text-xs font-normal ">
                     {time} 
-                <a className='material-icons scale-75 text-zinc-600'>public</a> 
+              { time && <a className='material-icons scale-75 text-zinc-600'>public</a>  } 
                 </span>
             </div>
   </section>

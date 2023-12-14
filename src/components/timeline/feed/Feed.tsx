@@ -25,8 +25,15 @@ const posts = [
       time: 'agora mesmo',
     },
     data: {
-      description:
-        'Colaborei com o desenvolvimento do sistema de gestão hospitalar da Unimed - Vale do Caí;',
+      description: (
+        <>
+          Olá, tudo bem?
+          <p>
+            Atualmente estou fazendo parte do desenvolvimento do sistema de
+            gestão hospitalar da Unimed - Vale do Caí.
+          </p>
+        </>
+      ),
       src: unimedImg,
     },
     likes: {
@@ -35,7 +42,7 @@ const posts = [
     actions: {},
   },
   {
-   header: {
+    header: {
       avatar: profileImg,
       userName: 'Derik Sehn',
       subtitle: 'agregou novos conhecimentos!',
@@ -47,15 +54,29 @@ const posts = [
       time: 'há 2 dias',
     },
     data: {
-      description:
-        '🧠 - Agreguei conhecimentos e técnicas, como:\n' +
-        '- Modelagem e de SGBD\'s\' ( aprofundado em PostgreSQL );\n' +
-        '- Desenvolvimento REST API em Java Web Dinamyc Project;\n' +
-        '- Boas Práticas de organização, performance e componentização de código;\n' +
-        '- Ferramentas VSCode, Eclipse, Postman, DBEaver, PGAdmin;\n' +
-        '- Desenvolvimento em javascript > React > TypeScript\n' +
-        '- Design Patterns | Bibliotecas Material | Chart.js | API\'s\n' +
-        '- Colaboração e controle de código com diversos desenvolvedores como o uso do GitLab',
+      description: (
+        <>
+          <p>
+            🧠 - Agreguei conhecimentos e técnicas, como:
+            <br />
+            - Modelagem e de SGBD's' (aprofundado em PostgreSQL);
+            <br />
+            - Desenvolvimento REST API em Java Web Dinamyc Project;
+            <br />
+            - Boas Práticas de organização, performance e componentização de
+            código;
+            <br />
+            - Ferramentas VSCode, Eclipse, Postman, DBEaver, PGAdmin;
+            <br />
+            - Desenvolvimento em javascript, React e TypeScript
+            <br />
+            - Design Patterns | Bibliotecas Material | Chart.js | API's
+            <br />
+            - Colaboração e controle de código com diversos desenvolvedores
+            como o uso do GitLab.
+          </p>
+        </>
+      ),
       src: dealImg,
     },
     likes: {
@@ -76,10 +97,16 @@ const posts = [
       time: 'há 4 dias',
     },
     data: {
-      description: <>
-      Sistema de gerenciamento da Associação de Funcionários da Unimed Vale do Caí.<br/>
-        ⚙️ Software ( DB, Rest API, FrontEnd )
-      </>,
+      description: (
+        <>
+          Sistema de gerenciamento da Associação de Funcionários da Unimed Vale
+          do Caí.
+          <br />
+          <p>
+            ⚙️ Software (DB, Rest API, FrontEnd )
+          </p>
+        </>
+      ),
       src: afuImg,
     },
     likes: {
@@ -100,8 +127,16 @@ const posts = [
       time: 'agora mesmo',
     },
     data: {
-      description:
-        'Recomendo Dérik B. Sehn como relevante para a posição de desenvolvedor full-stack. Ele trabalhou em um projeto de desenvolvimento web para a Unimed Cai Valley, onde desenvolveu componentes React e colaborou em uma API REST Java. Ele também trabalhou como estagiário em uma empresa de design gráfico, onde adquiriu experiência em Photoshop e CorelDRAW.',
+      description: (
+        <>
+          Recomendo Dérik B. Sehn como relevante para a posição de
+          desenvolvedor full-stack. Ele trabalhou em um projeto de
+          desenvolvimento web para a Unimed Vale do Caí, onde desenvolveu
+          componentes React e colaborou em uma API REST Java. Ele também
+          trabalhou como estagiário em uma empresa de design gráfico, onde
+          adquiriu experiência em Photoshop e CorelDRAW.
+        </>
+      ),
       src: dealImg,
     },
     likes: {
@@ -109,56 +144,21 @@ const posts = [
     },
     actions: {},
   },
-  {
-    header: {
-      avatar: patrocinadora,
-      userName: 'Outro Usuário',
-      subtitle: 'curtiu isso',
-    },
-    owner: {
-      avatar: patrocinadora,
-      name: 'Outro Usuário',
-      subtitle: 'Desenvolvedor Frontend',
-      time: 'há 2 horas',
-    },
-    data: {
-      description:
-        'Estou impressionado com o trabalho da equipe no último projeto. Ótimo trabalho pessoal!',
-      src: dealImg,
-    },
-    likes: {
-      likesCount: 15,
-    },
-    actions: {},
-  },
-  {
-    header: {
-      avatar: patrocinadora,
-      userName: 'Mais um Usuário',
-      subtitle: 'comentou isso',
-    },
-    owner: {
-      avatar: patrocinadora,
-      name: 'Mais um Usuário',
-      subtitle: 'Designer UX/UI',
-      time: 'há 4 horas',
-    },
-    data: {
-      description:
-        'Adorei as cores e a tipografia! Vamos continuar assim no próximo projeto.',
-      src: dealImg,
-    },
-    likes: {
-      likesCount: 8,
-    },
-    actions: {},
-  },
-  // Adicione mais objetos ao array conforme necessário
+  
+ 
+  
 ];
 
 export default function Feed() {
   return (
     <section className=''>
+     {/*  <section className=" ">
+          <PostOwner src={patrocinadora} name={'Ellen Cassol'} 
+          subtitle={"Analista de suporte técnico"} time={'agora mesmo'}  />
+          <PostData description='opa bao?' src={dealImg} />
+          <PostLikes likesCount={42} />
+          <PostActions />
+        </section> */}
       {posts.map((post, index) => (
         <Post key={index}>
           <PostHeader>

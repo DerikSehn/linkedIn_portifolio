@@ -25,14 +25,13 @@ export default function Drawer({children}: any) {
             <div className="pt-4 px-5 w-[380px]" >
               <div className="mb-6 flex items-center justify-between ">
               
-            <span className="block font-extrabold text-xl ">Para negócios</span>
+               <span className="block font-extrabold text-xl ">Para negócios</span>
                <CloseButton onClick={closeDrawer}/>
               </div>
-
             
             </div>
             <div className="p-6 pt-2">
-              <span className="block font-extrabold text-lg py-[1rem] border rounded-t-md text-center">Conheça mais soluções do LinkedIn</span>
+              <span className="block font-extrabold text-lg py-[1rem] border rounded-t-md text-center">Conheça mais soluções do PortIn</span>
               <span className="flex font-light text-sm py-[1rem] border rounded-md text-center p-2">
                 teste
               </span>

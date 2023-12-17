@@ -1,11 +1,11 @@
 // src/components/Header.tsx
 import React from 'react';
-import logo from '../assets/landing_page/icons8-linkedin-48.png'
-import SearchInput from './SearchInput';
-import IconButton from './utils/IconButton';
+import logo from '../../assets/landing_page/icons8-linkedin-48.png'
+import SearchInput from '../SearchInput';
+import IconButton from '../utils/IconButton';
 import Profile from './Profile';
-import ArrowDown from './ArrowDown';
-import Drawer from './utils/Drawer';
+import ArrowDown from '../ArrowDown';
+import Drawer from '../utils/Drawer';
 
 const Header: React.FC = () => {
 

@@ -1,52 +1,22 @@
-import React from 'react';
+import afuImg from '../../../assets/landing_page/afuImg.png';
+import dealImg from '../../../assets/landing_page/deal.png';
+import patrocinadora from '../../../assets/landing_page/patrocinadora.jpeg';
+import profileImg from '../../../assets/landing_page/profile_avatar.jpeg';
+import unimedImg from '../../../assets/landing_page/unimedImg.jpg';
 import Post from './Post';
-import PostHeader from './PostHeader';
-import PostOwner from './PostOwner';
-import PostLikes from './PostLikes';
 import PostActions from './PostActions';
 import PostData from './PostData';
-import patrocinadora from '../../../assets/landing_page/patrocinadora.jpeg';
-import dealImg from '../../../assets/landing_page/deal.png';
-import profileImg from '../../../assets/landing_page/profile_avatar.jpeg'
-import unimedImg from '../../../assets/landing_page/unimedImg.jpg'
-import afuImg from '../../../assets/landing_page/afuImg.png'
+import PostHeader from './PostHeader';
+import PostLikes from './PostLikes';
+import PostOwner from './PostOwner';
 
 const posts = [
-  {
-    header: {
-      avatar: patrocinadora,
-      userName: 'Ellen Cassol',
-      subtitle: 'parabenizou isso',
-    },
-    owner: {
-      avatar: patrocinadora,
-      name: 'Ellen Cassol',
-      subtitle: 'Analista de suporte técnico',
-      time: 'agora mesmo',
-    },
-    data: {
-      description: (
-        <>
-          Recomendo Dérik B. Sehn como relevante para a posição de
-          desenvolvedor full-stack. Ele trabalhou em um projeto de
-          desenvolvimento web para a Unimed Vale do Caí, onde desenvolveu
-          componentes React e colaborou em uma API REST Java. Ele também
-          trabalhou como estagiário em uma empresa de design gráfico, onde
-          adquiriu experiência em Photoshop e CorelDRAW.
-        </>
-      ),
-      src: dealImg,
-    },
-    likes: {
-      likesCount: 42,
-    },
-    actions: {},
-  },
+  
     {
     header: {
       avatar: profileImg,
       userName: 'Derik Sehn',
-      subtitle: 'compartilhou uma conquista',
+      subtitle: 'compartilhou uma introdução',
     },
     owner: {
       avatar: profileImg,
@@ -57,10 +27,14 @@ const posts = [
     data: {
       description: (
         <>
-          Olá, tudo bem?
+        <h2> <b>
+          Sobre mim
+        </b>
+        </h2>
           <p>
-            Atualmente estou fazendo parte do desenvolvimento do sistema de
-            gestão hospitalar da Unimed - Vale do Caí.
+          Olá! Meu nome é Derik B. Sehn, sou um apaixonado Desenvolvedor Full Stack 
+          com experiência sólida em projetos web. 
+          Minha jornada tem sido marcada por desafios estimulantes e conquistas notáveis
           </p>
         </>
       ),
@@ -129,11 +103,14 @@ const posts = [
     data: {
       description: (
         <>
-          Sistema de gerenciamento da Associação de Funcionários da Unimed Vale
+          Desenvolvi o <a target='_blank' href='https://afu.unimedvaledocai.com.br'>
+          sistema de gerenciamento da Associação de Funcionários da Unimed Vale
           do Caí.
+            </a>
           <br />
           <p>
-            ⚙️ Software (DB, Rest API, FrontEnd )
+            ⚙️ Software (DB, Rest API, FrontEnd ) disponível em 
+            
           </p>
         </>
       ),
@@ -144,13 +121,43 @@ const posts = [
     },
     actions: {},
   },
-  
+  {
+    header: {
+      avatar: patrocinadora,
+      userName: 'Ellen Cassol',
+      subtitle: 'parabenizou isso',
+    },
+    owner: {
+      avatar: patrocinadora,
+      name: 'Ellen Cassol',
+      subtitle: 'Analista de suporte técnico',
+      time: 'agora mesmo',
+    },
+    data: {
+      description: (
+        <>
+          Recomendo Dérik B. Sehn como relevante para a posição de
+          desenvolvedor full-stack. Ele trabalhou em um projeto de
+          desenvolvimento web para a Unimed Vale do Caí, onde desenvolveu
+          componentes React e colaborou em uma API REST Java. Ele também
+          trabalhou como estagiário em uma empresa de design gráfico, onde
+          adquiriu experiência em Photoshop e CorelDRAW.
+        </>
+      ),
+      src: dealImg,
+    },
+    likes: {
+      likesCount: 42,
+    },
+    actions: {},
+  },
   
  
   
 ];
 
 export default function Feed() {
+  
   return (
     <section className=''>
      {/*  <section className=" ">

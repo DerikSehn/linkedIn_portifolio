@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar, Dropdown } from 'flowbite-react';
-import profileAvatar from '../assets/landing_page/profile_avatar.jpeg'
-import ArrowDown from './ArrowDown';
+import profileAvatar from '../../assets/landing_page/profile_avatar.jpeg'
+import ArrowDown from '../ArrowDown';
 
 export default function Profile() {
   return (

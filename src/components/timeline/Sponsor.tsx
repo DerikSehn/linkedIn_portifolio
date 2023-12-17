@@ -8,7 +8,7 @@ export default function Sponsor() {
        </div>
       
          <div className="flex flex-col items-center justify-center h-full ">
-            <span className="text-sm text-gray-500 ">Nenhum patrocinador encontrado</span>
+            <span className="text-sm text-gray-500 ">Implementando este componente</span>
          </div>
          
          
